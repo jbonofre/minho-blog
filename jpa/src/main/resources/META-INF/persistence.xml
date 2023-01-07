@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="1.0">
+
+    <persistence-unit name="BlogEntity" transaction-type="RESOURCE_LOCAL">
+        <class>net.nanthrax.blog.minho.jpa.BlogEntity</class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+            <property name="openjpa.RuntimeUnenhancedClasses" value="supported"/>
+            <property name="openjpa.jdbc.SynchronizeMappings"
+                      value="buildSchema"/>
+            <property name="openjpa.ConnectionURL"
+                      value="jdbc:derby:test;databaseName=blog;create=true"/>
+            <property name="openjpa.ConnectionDriverName"
+                      value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>

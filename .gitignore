@@ -1,0 +1,12 @@
+.iml
+.idea
+.project
+.classpath
+.settings
+target
+eclipse-classes
+atlassian-ide-plugin.xml
+dependency-reduced-pom.xml
+.apt_generated_tests
+pom.xml.versionsBackup
+

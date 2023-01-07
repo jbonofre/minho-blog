@@ -12,7 +12,7 @@
 
     <modules>
         <module>jpa</module>
-        <!-- <module>rest</module> -->
+        <module>rest</module>
         <!-- <module>runtime</module> -->
     </modules>
 
@@ -31,7 +31,17 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.karaf.minho</groupId>
+                <artifactId>minho-http</artifactId>
+                <version>${minho.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.minho</groupId>
                 <artifactId>minho-jpa</artifactId>
+                <version>${minho.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.minho</groupId>
+                <artifactId>minho-rest</artifactId>
                 <version>${minho.version}</version>
             </dependency>
             <dependency>

@@ -1,0 +1,6 @@
+{
+  "properties": {
+    "rest.packages": "net.nanthrax.blog.minho.rest",
+    "rest.path": "/blog/*"
+  }
+}

@@ -17,7 +17,7 @@ public class BlogJpaService implements Service {
 
     @Override
     public int priority() {
-        return 100;
+        return Service.DEFAULT_PRIORITY + 1;
     }
 
     @Override

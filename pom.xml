@@ -13,7 +13,9 @@
     <modules>
         <module>jpa</module>
         <module>rest</module>
+        <module>servlet</module>
         <module>runtime</module>
+        <module>native</module>
     </modules>
 
     <properties>

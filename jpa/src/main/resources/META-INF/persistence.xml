@@ -11,9 +11,9 @@
             <property name="openjpa.jdbc.SynchronizeMappings"
                       value="buildSchema"/>
             <property name="openjpa.ConnectionURL"
-                      value="jdbc:derby:test;databaseName=blog;create=true"/>
+                      value="jdbc:hsqldb:mem:testdb;DB_CLOSE_DELAY=-1"/>
             <property name="openjpa.ConnectionDriverName"
-                      value="org.apache.derby.jdbc.EmbeddedDriver"/>
+                      value="org.hsqldb.jdbc.JDBCDriver"/>
         </properties>
     </persistence-unit>
 

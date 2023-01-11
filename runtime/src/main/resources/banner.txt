@@ -7,4 +7,4 @@
                 __/ |
                |___/
 
-  Welcome to Apahe Karaf Minho Blog (${project.version})
+  Welcome to Apache Karaf Minho Blog (${project.version})

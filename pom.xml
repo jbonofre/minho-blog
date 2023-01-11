@@ -17,7 +17,7 @@
     </modules>
 
     <properties>
-        <minho.version>0.1</minho.version>
+        <minho.version>0.2-SNAPSHOT</minho.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>

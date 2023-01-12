@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: minho-blog-config
+  namespace: minho
+  labels:
+    app: minho
+data:
+  rest.path: "/osc/*"

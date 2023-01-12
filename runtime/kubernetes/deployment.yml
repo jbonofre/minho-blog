@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minho-blog
+  namespace: minho
+  labels:
+    app: minho-blog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minho-blog 
+  template:
+    metadata:
+      labels:
+        app: minho-blog
+    spec:
+      containers:
+        - name: minho-blog
+          image: minho-blog:1.0.0-SNAPSHOT
+          envFrom:
+            - configMapRef:
+                name: minho-blog-config
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /blog/health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /blog/health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10

@@ -15,7 +15,8 @@
         <module>rest</module>
         <module>servlet</module>
         <module>runtime</module>
-        <module>native</module>
+        <module>my-spring-boot-app</module>
+        <module>coloc</module>
     </modules>
 
     <properties>
@@ -57,6 +58,11 @@
                 <version>${minho.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.karaf.minho</groupId>
+                <artifactId>minho-spring-boot</artifactId>
+                <version>0.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>5.9.1</version>
@@ -76,5 +82,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>native</id>
+            <modules>
+                <module>native</module>
+            </modules>
+        </profile>
+    </profiles>
 
 </project>

@@ -1,0 +1,20 @@
+{
+  "applications": [
+    {
+      "name": "one-app",
+      "type": "spring-boot",
+      "url": "file:./app/my-spring-boot-app-1.0-SNAPSHOT.jar",
+      "properties": {
+        "args": "--server.port=8181"
+      }
+    },
+    {
+      "name": "another-app",
+      "type": "spring-boot",
+      "url": "file:./app/my-spring-boot-app-1.0-SNAPSHOT.jar",
+      "properties": {
+        "args": "--server.port=8282"
+      }
+    }
+  ]
+}

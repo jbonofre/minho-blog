@@ -29,10 +29,6 @@
             <groupId>org.apache.karaf.minho</groupId>
             <artifactId>minho-banner</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.minho</groupId>
-            <artifactId>minho-config-json</artifactId>
-        </dependency>
     </dependencies>
 
     <properties>

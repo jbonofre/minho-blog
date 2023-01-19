@@ -23,15 +23,3 @@ spec:
                 name: minho-blog-config
           ports:
             - containerPort: 8080
-          livenessProbe:
-            httpGet:
-              path: /blog/health
-              port: 8080
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              path: /blog/health
-              port: 8080
-            initialDelaySeconds: 5
-            periodSeconds: 10

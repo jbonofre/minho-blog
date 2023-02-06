@@ -1,0 +1,2 @@
+net.nanthrax.blog.minho.telemetry.servlet.OpenTelemetryLoader
+net.nanthrax.blog.minho.telemetry.servlet.InstrumentedServlet

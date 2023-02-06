@@ -17,6 +17,7 @@
         <module>runtime</module>
         <module>my-spring-boot-app</module>
         <module>coloc</module>
+        <module>telemetry</module>
     </modules>
 
     <properties>
